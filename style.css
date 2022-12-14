@@ -1,0 +1,10 @@
+ #slider {
+     padding-top: 30px;
+ }
+
+ img {
+     border-radius: 50px;
+     width: 200px;
+     height: 200px;
+     border: #000000 6px solid;
+ }
