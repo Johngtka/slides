@@ -1,4 +1,4 @@
-// wywołanie metody ładującej poniższe finkcje z obsługą opóźnień wyświetlenia
+// wywołanie metody ładującej poniższe funkcje z obsługą opóźnień wyświetlenia
 window.onload = () => {
     setInterval(data, 1000)
     data()
@@ -22,6 +22,7 @@ function zmienslajd() {
 function data() {
     // inicjalizacja zmiennej time przechowującej obiekt
     var time = new Date()
+    // window.time = new Date()
     // zmienna przechowująca metode dnia zmiennej globalnej time 
     var day = time.getDate()
     // zmienna przechowująca metode miesiąca zmiennej globalnej time
@@ -44,7 +45,5 @@ function data() {
         console.log("kremówki")
     }
     // uchwyt do div gdzie ma się pojawić data i wyświetlenie tam tych danych
-    document.querySelector('#data').innerHTML = day + "." + mon + "." + year
-    // uchwyt do div gdzie ma się pojawić czas i wyświetlanie tam tych danych
-    document.querySelector('#zegar').innerHTML = h + ":" + m + ":" + s
+    document.querySelector('#data').innerHTML = day + "." + mon + "." + year + '<br>' + h + ":" + m + ":" + s
 }
