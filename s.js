@@ -7,6 +7,7 @@ window.onload = () => {
 }
 // definicja zmiennej randomowych numerów które pochodzą z zaokrąglonego zakresu wybierane randomowo z od 1-6
 var numer = Math.floor(Math.random() * 6) + 1
+
 // funkcja zmieniająca slajd
 function zmienslajd() {
     // inkrementacja 
